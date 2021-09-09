@@ -275,8 +275,6 @@ async def echo(bot, update):
             parse_mode="html",
             reply_to_message_id=update.message_id
         )
-        ])
-        reply_markup = InlineKeyboardMarkup(inline_keyboard)
 
         await intmsg.delete()
         await bot.send_message(
