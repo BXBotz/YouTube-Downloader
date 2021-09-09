@@ -206,7 +206,7 @@ async def echo(bot, update):
                 "🎶MP3🎶 " + "(" + "320 kbps" + ")", 
                 callback_data=cb_string.encode("UTF-8")
                         )
-                    ])
+                    ]
         reply_markup = InlineKeyboardMarkup(ikeyboard)
 
         thumbnail = Config.DEF_THUMB_NAIL_VID_S
