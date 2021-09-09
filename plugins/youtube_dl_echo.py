@@ -237,7 +237,10 @@ async def echo(bot, update):
                     InlineKeyboardButton(
                         "🎶MP3🎶 " + "(" + "128 kbps" + ")", callback_data=cb_string_128.encode("UTF-8")),
                     InlineKeyboardButton(
-                        "🎶MP3🎶 " + "(" + "320 kbps" + ")", callback_data=cb_string.encode("UTF-8"))
+                        "🎶MP3🎶 " + "(" + "320 kbps" + ")", callback_data=cb_string.encode("UTF-8")
+                )
+            ])
+        reply_markup = InlineKeyboardMarkup(inline_keyboard)
 
         thumbnail = Config.DEF_THUMB_NAIL_VID_S
         thumbnail_image = Config.DEF_THUMB_NAIL_VID_S
